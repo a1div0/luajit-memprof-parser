@@ -11,7 +11,7 @@ local config = {
     human_readable = true,
 }
 
-require('lua-debug-helper').run()
+--require('lua-debug-helper').run()
 
 view.profile_info(events, config)
 
