@@ -34,10 +34,6 @@ local EV_HEADER_MAX = ASOURCE_TRACE + AEVENT_REALLOC
 
 local M = {}
 
-local function bytes_read(reader)
-    return ffi_C.ftell(reader._file) - (reader._end - reader._pos)
-end
-
 local function new_event(loc)
   return {
     loc = loc,
